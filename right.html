@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>网站后台管理系统HTML模板--模板之家 www.cssmoban.com</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="./css/rightList.css">
+    <link rel="stylesheet" href="./plugin/layui-v1.0.7/css/layui.css">
+    <link rel="stylesheet" href="./css/date.css">
+</head>
+<body>
+    <!-- 头部 -->
+	<div class="place">
+        <span>位置：</span>
+        <ul class="placeul">
+            <!-- <li><a href="#">首页</a></li> -->
+            <!-- <li><a href="#">数据表</a></li> -->
+            <li><a href="./right.html">房源列表</a></li>
+        </ul>
+    </div>
+    <div class="rightinfo">
+        <!-- 添加 -->
+        <div class="tools">
+            <ul class="toolbar1">
+                <li class="click cur">新增房源</li>
+                <!-- <li><span><img src="images/t05.png" /></span>设置</li> -->
+            </ul>
+        	<ul class="toolbar">
+                <li class="click">搜索</li>
+                <input type="text" />
+                <!-- <li class="click"><span><img src="images/t02.png" /></span>修改</li> -->
+                <!-- <li><span><img src="images/t03.png" /></span>删除</li> -->
+                <!-- <li><span><img src="images/t04.png" /></span>统计</li> -->
+            </ul>
+        </div>
+        <!--条件查询-->
+        <div class="xc_nav">
+            <div class="line_b clear">
+                <ul class="xc_nav_l">
+                    <li>品牌：</li>
+                    <li><p class="active">不限</p></li>
+                    <li><p>小城整租</p></li>
+                    <li><p>业主直租</p></li>
+                </ul>
+                <ul class="xc_nav_r">
+                    <li>建筑面积:</li>
+                    <li><p class="active">不限</p></li>
+                    <li><p>10㎡以下</p></li>
+                    <li><p>10~30m²</p></li>
+                    <li><p>30~50m²</p></li>
+                    <li><p>50~70m²</p></li>
+                    <li><p>70~90m²</p></li>
+                    <li><p>90m²以上</p></li>
+                </ul>
+            </div>
+            <div class="line_b clear">
+                <ul class="xc_nav_l">
+                    <li>发布时间：</li>
+                    <li><input type="text" id="dp11" class="layui-input ui-time-text" value="" kssj="" jssj="" /></li>
+                </ul>
+                <ul class="xc_nav_r_2">
+                    <li>月租金:</li>
+                    <li><p class="active">不限</p></li>
+                    <li><p>1500元以下</p></li>
+                    <li><p>1500~3000元</p></li>
+                    <li><p>300~5000元</p></li>
+                    <li><p>5000以上</p></li>
+                </ul>
+            </div>
+            <div class="clear">
+                <ul class="xc_nav_l_1">
+                    <li>户型：</li>
+                    <li><p class="active">不限</p></li>
+                    <li><p>1居</p></li>
+                    <li><p>2居</p></li>
+                    <li><p>3居</p></li>
+                    <li><p>4居</p></li>
+                </ul>
+                <ul class="xc_nav_r_3">
+                    <li>更多:</li>
+                    <li><select>
+                        <option>供暖方式</option>
+                        <option>自供暖</option>
+                        <option>集中供暖</option>
+                        <option>无供暖</option>
+                    </select></li>
+                    <li><select>
+                        <option>建筑类型</option>
+                        <option>别墅</option>
+                        <option>板楼</option>
+                        <option>塔楼</option>
+                        <option>塔板结合</option>
+                    </select></li>
+                    <li><select>
+                        <option>装修</option>
+                        <option>豪华装修</option>
+                        <option>精装修</option>
+                        <option>中等装修</option>
+                        <option>简单装修</option>
+                        <option>毛胚</option>
+                    </select></li>
+                    <li><label><input type="checkbox">车位</label></li>
+                    <li><label><input type="checkbox">电梯</label></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 列表 -->
+        <table class="tablelist">
+        	<thead>
+            	<tr>
+                    <!-- <th><input name="" type="checkbox" value="" checked="checked"/></th> -->
+                    <th class="cur btn_px">序号<i class="sort"><img src="images/px.gif" /></i></th>
+                    <th class="cur btn_px">房源编号<i class="sort"><img src="images/px.gif" /></i></th>
+                    <th>房源标题</th>
+                    <th>所属市区</th>
+                    <th class="cur btn_px">建筑面积<i class="sort"><img src="images/px.gif" /></i></th>
+                    <th>具体户型</th>
+                    <th>所处楼层</th>
+                    <th class="cur btn_px">房源月租<i class="sort"><img src="images/px.gif" /></i></th>
+                    <th>房源管家</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- <td><input name="" type="checkbox" id="male" value="" /></td> -->
+                    <td>0</td>
+                    <td>000000</td>
+                    <td><a href="#" class="tablelink">别墅</a></td>
+                    <td>北京市 / 西城区</td>
+                    <td><span>90</span>㎡</td>
+                    <td>2室1厅</td>
+                    <td><span>3/5</span>层</td>
+                    <td><span>500</span>元</td>
+                    <td>小城</td>
+                    <td><a href="#" class="tablelink xc_x">修改</a><a href="#" class="tablelink xc_s"> 删除</a></td>
+                </tr>
+                <tr>
+                    <!-- <td><input name="" type="checkbox" id="male" value="" /></td> -->
+                    <td>1</td>
+                    <td>000000</td>
+                    <td><a href="#" class="tablelink">别墅</a></td>
+                    <td>北京市 / 西城区</td>
+                    <td><span>90</span>㎡</td>
+                    <td>2室1厅</td>
+                    <td><span>3/5</span>层</td>
+                    <td><span>500</span>元</td>
+                    <td>小城</td>
+                    <td><a href="#" class="tablelink xc_x">修改</a><a href="#" class="tablelink xc_s"> 删除</a></td>
+                </tr>
+                <tr>
+                    <!-- <td><input name="" type="checkbox" id="male" value="" /></td> -->
+                    <td>2</td>
+                    <td>000000</td>
+                    <td><a href="#" class="tablelink">别墅</a></td>
+                    <td>北京市 / 西城区</td>
+                    <td><span>90</span>㎡</td>
+                    <td>2室1厅</td>
+                    <td><span>3/5</span>层</td>
+                    <td><span>500</span>元</td>
+                    <td>小城</td>
+                    <td><a href="#" class="tablelink xc_x">修改</a><a href="#" class="tablelink xc_s"> 删除</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 分页 -->
+        <div class="pagin">
+            <ul class="paginList">
+                <!-- <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+                <li class="paginItem current"><a href="javascript:;">1</a></li>
+                <li class="paginItem"><a href="javascript:;">2</a></li>
+                <li class="paginItem"><a href="javascript:;">3</a></li>
+                <li class="paginItem"><a href="javascript:;">4</a></li>
+                <li class="paginItem"><a href="javascript:;">5</a></li>
+                <li class="paginItem more"><a href="javascript:;">...</a></li>
+                <li class="paginItem"><a href="javascript:;">10</a></li>
+                <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li> -->
+                <li class="cur btn_s"><a href="javascript:;">上一页</a></li>
+                <li><span class="xc_dlc"></span>/<span class="xc_zlc"></span></li>
+                <li class="cur btn_x"><a href="javascript:;">下一页</a></li>
+            </ul>
+            <div class="message">每页显示
+                <select>
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                    <option>200</option>
+                </select>总共查询到<i class="blue"></i>条记录</div>
+        </div>
+        <!-- 弹窗 -->
+        <div class="tip">
+        	<div class="tiptop"><span>提示信息</span><a></a></div>
+            <div class="tipinfo">
+                <span><img src="images/ticon.png" /></span>
+                <div class="tipright">
+                    <p>是否确认对信息的修改 ？</p>
+                    <cite>如果是请点击确定按钮 ，否则请点取消。</cite>
+                </div>
+            </div>
+            <div class="tipbtn">
+                <input name="" type="button"  class="sure" value="确定" />&nbsp;
+                <input name="" type="button"  class="cancel" value="取消" />
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./plugin/layui-v1.0.7/layui.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        /*时间*/
+        $(document).ready(function(){
+            $(".click").click(function(){
+                $(".tip").fadeIn(200);
+            });
+            $(".tiptop a").click(function(){
+                $(".tip").fadeOut(200);
+            });
+            $(".sure").click(function(){
+                $(".tip").fadeOut(100);
+            });
+            $(".cancel").click(function(){
+                $(".tip").fadeOut(100);
+            });
+    	    $('.tablelist tbody tr:odd').addClass('odd');
+            $(function(){
+                //导航切换
+                $(".xc_nav_l li p").click(function(){
+                    $(".xc_nav_l li p").removeClass("active")
+                    $(this).addClass("active");
+                });
+                $(".xc_nav_l_1 li p").click(function(){
+                    $(".xc_nav_l_1 li p").removeClass("active")
+                    $(this).addClass("active");
+                });
+                $(".xc_nav_r li p").click(function(){
+                    $(".xc_nav_r li p").removeClass("active")
+                    $(this).addClass("active");
+                });
+                $(".xc_nav_r_2 li p").click(function(){
+                    $(".xc_nav_r_2 li p").removeClass("active")
+                    $(this).addClass("active");
+                });
+            });
+
+            /* 调数据 */
+            //var myurl = "http://47.92.87.199:8081/xczfw-app/rest/house/getHouseDetail.json";
+            var myurl = "http://test.api.xczfw.cn/xczfw-app/rest/house/getHouseDetail.json";
+            //var myurl = "http://test.api.xczfw.cn/rest/house/getHouseDetail.json"
+            /* 获取路径中的参数 */
+            /*var test = window.location.href;
+            var num = 12;
+            document.cookie = 'house='+num;*/
+            /*console.log()*/
+            var xmlhttp = getXmlhttp();
+            xmlhttp.onreadystatechange = function() {  
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var ajaxResult = eval("(" + xmlhttp.responseText + ")");
+                    console.log(ajaxResult);
+                    $('.blue').text('12');
+                    $('.xc_dlc').text('1')
+                    $('.xc_zlc').text('5')
+                    /*for (var i = 0; i < ajaxResult.length; i++) {
+                        Things[i]
+                    };
+                    $(".tablelist tbody").append();*/
+                }
+            }
+            xmlhttp.open("POST", myurl, true);
+            xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");  
+            xmlhttp.send("houseId="+12);
+        });
+        
+        var num = 1;
+        /*上一页*/
+        $(".btn_s").click(function(){
+            if(num<=1){
+                alert("已经是第一页了！")
+            }else{
+                num--;
+            }
+            $(".xc_dlc").text(num)
+        });
+        /*下一页*/
+        $(".btn_x").click(function(){
+            if(num>=5){
+                alert("已经是最后页了！")
+            }else{
+                num++;
+            }
+            $(".xc_dlc").text(num)
+        });
+        $(".xc_s").click(function(){
+            $(this).parent().parent().remove();
+        })
+
+        /*排序*/
+        let flag;
+        $(".btn_px").click(function(){
+            if (flag) {
+                flag = !flag 
+                alert('正序');
+            } else{
+                flag = !flag 
+                alert('倒序')
+            };
+        })
+        
+        function houseList(page,list,){
+            var xmlhttp = getXmlhttp();
+            xmlhttp.onreadystatechange = function() {  
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var ajaxResult = eval("(" + xmlhttp.responseText + ")");
+                    console.log(ajaxResult);
+
+                }
+            }
+            xmlhttp.open("POST", myurl, true);
+            xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");  
+            xmlhttp.send("houseId="+12);
+        }
+        function getXmlhttp() {
+            var xmlhttp;  
+            if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari  
+                xmlhttp = new XMLHttpRequest();  
+            } else { // code for IE6, IE5  
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");  
+            }  
+            return xmlhttp;  
+        }
+        window.onload=function () {
+            layui.config({
+                base: 'js/'
+            }).extend({
+                dateLay:'jQuery.dateLay'
+            });
+            layui.use(['laydate','dateLay'], function(){
+                var  layer = layui.layer,laydate = layui.laydate;
+                var obj={
+                    init:function(){
+                        this.dp11=$('#dp11');
+                        this.initEvent();
+                    },
+                    initEvent:function(){
+                        this.dp11.dateLay();
+                    }
+                }
+                obj.init();
+            });
+        }
+	</script>
+</body>
+</html>

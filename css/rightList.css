@@ -1,0 +1,107 @@
+.xc_nav{
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    min-height: 100px;
+    padding: 10px 15px 5px 15px;
+    position: relative;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.xc_nav_l{
+    float: left;
+    min-width:300px;
+    width: 30%;
+}
+.xc_nav_l li,.xc_nav_r  li,.xc_nav_r_2 li,.xc_nav_l_1 li,.xc_nav_r_3 li{
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 5px;
+}
+.xc_nav_l li:first-of-type{
+     width:60px;
+}
+.xc_nav_l li p{
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.xc_nav_l_1{
+    float: left;
+    min-width:300px;
+    width: 30%;
+}
+.xc_nav_l_1 li:first-of-type{
+    width:50px;
+}
+.xc_nav_l_1 li p{
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.xc_nav_r{
+    float: left;
+    min-width:630px;
+}
+.xc_nav_r li p{
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.xc_nav_r li:first-of-type{
+    width:60px;
+}
+
+.xc_nav_r_2{
+    float: left;
+    min-width:630px;
+}
+.xc_nav_r_2 li p{
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.xc_nav_r_2 li:first-of-type{
+    width:60px;
+}
+
+.xc_nav_r_3{
+    float: left;
+    min-width:630px;
+}
+.xc_nav_r_3 li select{
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+}
+.xc_nav_r_3 li label{
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 6px 5px 0;
+}
+.xc_nav_r_3 li:first-of-type{
+    width:60px;
+}
+.line_b{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.txt_calendar{
+    top: 168px;
+}
+
+/* 分页 */
+.message{
+    float: right;
+}
+.message select{
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
